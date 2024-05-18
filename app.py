@@ -17,8 +17,8 @@ book_titles = list(pt.index.values)
 book_name=list(popular_df['Book-Title'].values),
 author=list(popular_df['Book-Author'].values),
 image=list(popular_df['Image-URL-M'].values),
-votes=list(popular_df['num_of_rating'].values),
-rating=list((round(popular_df['avg_rating'], 2).values))
+votes=list(popular_df['Num-Ratings'].values),
+rating=list((round(popular_df['Avg-Ratings'], 2).values))
 
 
 def recommend(user_input):
